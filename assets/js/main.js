@@ -18,7 +18,7 @@
 
     /*START PRELOADER JS & REFRESH AOS*/
     $window.on('load', function () {
-        $('.preloader').delay(350).fadeOut('slow');
+        $('.preloader').delay(100).fadeOut('slow');
         AOS.refresh();
     });
     /*END PRELOADER JS & REFRESH AOS*/
@@ -76,7 +76,7 @@
             $otherFeaturesSlider.slick({
                 centerMode: true,
                 centerPadding: '150px',
-                slidesToShow: 3,
+                slidesToShow: 2,
                 infinite: false,
                 focusOnSelect: true,
                 arrows: false,
@@ -101,11 +101,14 @@
         if ($screenshotsSlider.length > 0) {
             $screenshotsSlider.slick({
                 centerMode: true,
-                centerPadding: '150px',
+                centerPadding: '0px',
+                initialSlide: 1,
                 slidesToShow: 3,
-                infinite: false,
+                infinite: true,
                 focusOnSelect: true,
-                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: true,
                 responsive: [{
                         breakpoint: 1200,
                         settings: {
@@ -116,6 +119,13 @@
                         settings: {
                             slidesToShow: 1,
                             centerPadding: '0',
+                            initialSlide: 0,
+                        }
+                    },
+                    {
+                        breakpoint: 375,
+                        settings: {
+                            initialSlide: 0,
                         }
                     },
                 ]
@@ -132,6 +142,8 @@
                 dots: true,
                 infinite: false,
                 arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1500,
                 responsive: [{
                         breakpoint: 1200,
                         settings: {
@@ -162,8 +174,9 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 dots: true,
-                infinite: false,
+                infinite: true,
                 arrows: false,
+                autoplay: true,
                 responsive: [{
                         breakpoint: 1200,
                         settings: {

@@ -125,7 +125,7 @@ a:hover {
 
 .btn-theme:hover,
 .prices .price-table:hover .btn-theme {
-    color: #fff;
+    color: #5b3d1f;
 }
 
 .btn-theme.btn-white:before {
@@ -136,7 +136,7 @@ a:hover {
     right: 0;
     bottom: 0;
     opacity: 1;
-    background: #fff;
+    background: #e4d969;
 }
 
 .btn-theme.btn-colord:before {
@@ -366,7 +366,7 @@ footer .subscribe .subscribe-form-2 .form-group {
 }
 
 .foxapp-header .navbar .navbar-nav .nav-item>.nav-link {
-    color: #fff;
+    color: #5b3d1f;
     /* margin: 20px 10px; */
     font-weight: 400;
     position: relative;
@@ -380,7 +380,7 @@ footer .subscribe .subscribe-form-2 .form-group {
     bottom: 0;
     width: 0%;
     height: 3px;
-    background-color: #fff;
+    background-color: #5b3d1f;
     transform: translateX(-50%);
     -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -504,13 +504,13 @@ footer .subscribe .subscribe-form-2 .form-group {
 .slide .content-bottom h2 {
     font-size: 90px;
     font-weight: 700;
-    color: #fff;
+    color: #5b3d1f;
     text-transform: uppercase;
     line-height: 90px;
 }
 
 .slide .content-bottom p {
-    color: #fff;
+    color: #5b3d1f;
     max-width: 400px;
 }
 
@@ -524,12 +524,19 @@ footer .subscribe .subscribe-form-2 .form-group {
     .slide .content-bottom img {
         max-width: 400px;
     }
+
+    .myTitle{
+        margin-top: 50px !important;
+    }
 }
 
 @media (max-width: 768px) {
     .slide .content-bottom h2 {
-        font-size: 60px;
+        font-size: 40px;
         line-height: 60px;
+    }
+    .myTitle{
+        margin-top: 50px !important;
     }
 }
 
@@ -636,7 +643,7 @@ footer .subscribe .subscribe-form-2 .form-group {
 
 .features-circle .circle-svg {
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: -1;
@@ -693,6 +700,13 @@ footer .subscribe .subscribe-form-2 .form-group {
         position: relative;
         right: 50px;
     }
+
+    .features-circle svg {
+        height: 600px;
+        margin-top: -25px;
+        margin-left: 0px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -703,6 +717,16 @@ footer .subscribe .subscribe-form-2 .form-group {
     .main-features .left-side .one-feature span {
         float: left;
     }
+
+    .features-circle svg {
+        height: 580px;
+        margin-top: 83px;
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+    }
 }
 
 @media (max-width: 414px) {
@@ -710,11 +734,19 @@ footer .subscribe .subscribe-form-2 .form-group {
         max-width: 100%;
         height: 410px;
     }
+
+    .foxapp-header {
+        background: #fff !important;
+    }
 }
 
 @media (max-width: 375px) {
     .features-circle svg {
         height: 350px;
+        margin-top: 95px;
+    }
+    .foxapp-header {
+        background: #fff !important;
     }
 }
 
@@ -1069,19 +1101,30 @@ footer .subscribe .subscribe-form-2 .form-group {
 /*------------------------------
     14. START TEAM SECTION
 ------------------------------*/
-
+.img-testi{
+    height: 60px !important;
+    width: 90px !important;
+}
 .our-team .team-slider .person {
-    background: #fff;
+    background: #5b3d1f;
     padding: 30px;
     margin: 0 15px;
     position: relative;
     margin-bottom: 100px;
     outline: none;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .our-team .team-slider .person img {
     border-radius: 50%;
     width: 130px;
+    height: 130px;
 }
 
 .our-team .team-slider .person h3 {

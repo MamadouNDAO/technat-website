@@ -24,7 +24,7 @@ aside.sidebar .categories ul li a,
 aside.sidebar .recent-post .post h4 a,
 aside.sidebar .tags ul li a,
 .single-blog-page .blog-box .blog-details h3 {
-    color: #303952;
+    color: #e4d969;
 }
 
 /*------------------------------
@@ -37,11 +37,11 @@ aside.sidebar .tags ul li a,
 .themes-colors span,
 .preloader,
 .btn-theme.btn-colord:before,
-.background-withcolor,
 .foxapp-header.sticky,
 .foxapp-header .dropdown-menu .dropdown-item:hover,
 .foxapp-header .dropdown-menu .dropdown-item.active,
 .box,
+.foxapp-header,
 .clients-testimonial .testimonial-slider .item .client-testimonial,
 .clients-testimonial .testimonial-slider .slick-dots li.slick-active button,
 .prices .price-table .bottom,
@@ -53,14 +53,22 @@ nav .pagination .page-item.active .page-link,
 aside.sidebar .gray-panel h3:after {
     background: #5b3d1f;
 }
-
+.background-withcolor{
+    background: #f2e9e4;
+    color: #5b3d1f;
+}
+.background-withcolor2{
+    background: #f2e9e4;
+    color: #5b3d1f;
+}
 @media (max-width: 992px) {
     .foxapp-header {
-        background: #5b3d1f;
+        background: #fff;
     }
 }
-
-
+.my-maron{
+    color: #5b3d1f;
+}
 a,
 .btn-white,
 .lnr,
@@ -101,8 +109,12 @@ aside.sidebar .search .form-group .form-control,
 }
 
 .lity,
-.watch-video .video:before {
-    background: #e4d969;
+/*.watch-video .video:before {
+    background: #5b3d1f;
+}*/
+
+.watch-video .video::after {
+    background: #5b3d1fb9 !important;
 }
 
 /*------------------------------
