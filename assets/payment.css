@@ -1,0 +1,18 @@
+.page-payment{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-payment img{
+    width: 200px;
+}
+
+
+.page-payment span{
+    font-size: 20px;
+}
